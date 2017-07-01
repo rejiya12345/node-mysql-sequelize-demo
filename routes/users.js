@@ -17,7 +17,12 @@ var util = require('util');
 // Users First Invest Page
 // =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= //
 usersController.get('/demopage', function(req, res) {
-    res.render('layouts/starter.ejs');
+     res.render('layouts/starter.ejs');
+    var obj= {
+    	name:"raj",
+    	age:12
+    };
+    res.send(obj);
 });
 
 
